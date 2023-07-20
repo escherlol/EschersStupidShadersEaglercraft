@@ -17,7 +17,7 @@
 		<script type="text/javascript">
 			"use strict";
 			window.addEventListener("load", () => {
-				if(document.location.href.startsWith("file:")) {
+				if(document.location.href.startsWith("lol:")) {
 					alert("HTTP please, do not open this file locally, run a local HTTP server and load it via HTTP");
 				}else {
 					
@@ -27,7 +27,7 @@
 						container: "game_frame",
 						assetsURI: "assets.epk",
 						localesURI: "lang/",
-						servers: [
+						servers: [{ addr: "wss://bungee-escherlol--node1sg.repl.co//", name: "CraftersGG - Start The Epic [1.20]" } */
 							/* example: { addr: "wss://bungee-escherlol--node1sg.repl.co//", name: "CraftersGG" } */
 						]
 					};
